@@ -1,0 +1,145 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --white: #fff;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: url(images/bg-mobile.svg) no-repeat center;
+    background-color: var(--Violet);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 1.5em;
+    padding: 0 1.5em;
+    color: var(--white);
+    min-height: 100vh;
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.content__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+.content__text {
+    padding: 0 0.3em;
+    text-align: center;
+}
+
+.mockups {
+    margin-top: 1.5em;
+}
+
+.hurdle-logo {
+    margin: 1.5em 0;
+    width: 40%;
+}
+
+h1 {
+    margin: 0.5em 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    margin: 1.5em 0;
+    padding: 0.5em 2.5em;
+    border-radius: 18px;
+    border: none;
+    color: var(--Violet);
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em 0;
+
+}
+
+li {
+    color: var(--white)
+}
+
+
+i {
+    border-radius: 50%;
+    width: 28px;
+    height: 25px;
+    margin: 0 0.5em;
+    border: 1px solid white;
+    text-align: center;
+    color: var(--white);
+    padding: 0.3em 0 1.2em 0;
+
+}
+
+@media(min-width:798px) {
+    body {
+        background: url(images/bg-desktop.svg) no-repeat;
+        background-color: var(--Violet);
+        min-height: 100vh;
+    }
+
+    .content__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+
+
+    }
+
+    .content__text {
+        text-align: justify;
+        width: 40%;
+        margin: 0 0 4.5em 1.5em;
+        padding: 0 0.5em;
+
+
+
+    }
+
+    .content__image {
+        width: 50%
+    }
+
+    .hurdle-logo {
+        margin: 1.5em 2em;
+        width: 15%;
+        padding: 1.5em;
+    }
+
+    ul {
+        justify-content: flex-end;
+        margin: 0.5em 0
+    }
+}
